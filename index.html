@@ -6,43 +6,17 @@
   <link rel="import" href="bower_components/polymer/polymer-element.html">
   <!-- <script src="bower_components/custom-elements/custom-elements.min.js"></script> -->
   <script src="bower_components/custom-elements/src/native-shim.js"></script>
-  <script src="bower_components/custom-elements/src/htmlelement-instanceof.js"></script>
-  <script src="node_modules/basic-component-mixins/dist/basic-component-mixins.js"></script>
+  <!-- <script src="bower_components/custom-elements/src/native-shim.old.js"></script> -->
+  <!-- <script src="bower_components/custom-elements/src/htmlelement-instanceof.js"></script> -->
+  <!-- <script src="node_modules/basic-component-mixins/dist/basic-component-mixins.js"></script> -->
+  <!-- <script src="src/Mixin.js"></script> -->
+  <script src="dist/build.js"></script>
 
   <dom-module id="test-element">
     <template>
       <slot></slot>
     </template>
   </dom-module>
-
-  <script>
-  const Mixin = base => class Mixin extends base {
-    constructor() {
-      super();
-      console.log('mixin constructor');
-    }
-  }
-
-  // class TestElement extends Basic.SingleSelection(Polymer.Element) {
-  // class TestElement extends Basic.SingleSelection(HTMLElement) {
-  class TestElement extends Mixin(Polymer.Element) {
-  // class TestElement extends Polymer.Element {
-
-    constructor() {
-      super();
-      console.log('component constructor');
-    }
-
-    get items() {
-      return [...this.children];
-    }
-
-    static get is() { return 'test-element'; }
-
-  }
-
-  customElements.define(TestElement.is, TestElement);
-  </script>
 
 </head>
 
