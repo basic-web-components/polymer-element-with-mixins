@@ -5,16 +5,12 @@ import Mixin from './Mixin';
 // class TestElement extends Basic.SingleSelection(HTMLElement) {
 // class TestElement extends Mixin(window.Polymer.Element) {
 // class TestElement extends Mixin(HTMLElement) {
-class TestElement extends Polymer.Element {
+class TestElement extends window.Polymer.Element {
 
   constructor() {
     const result = super();
     console.log('component constructor');
     return result;
-  }
-
-  get items() {
-    return [...this.children];
   }
 
   static get is() { return 'test-element'; }

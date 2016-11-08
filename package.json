@@ -5,5 +5,8 @@
     "babel-preset-es2015": "^6.18.0",
     "babelify": "^7.3.0",
     "browserify": "^13.1.1"
+  },
+  "scripts": {
+    "build": "node node_modules/browserify/bin/cmd.js --debug --transform [babelify] es5/TestElement.js --outfile es5/dist/build.js"
   }
 }
