@@ -726,6 +726,10 @@ crypto-browserify@^3.0.0:
     public-encrypt "^4.0.0"
     randombytes "^2.0.0"
 
+custom-elements@webcomponents/custom-elements#master:
+  version "1.0.0-alpha.3"
+  resolved "https://codeload.github.com/webcomponents/custom-elements/tar.gz/fc022e8eb0f5f7f3974dd697438d16e809440017"
+
 date-now@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/date-now/-/date-now-0.1.4.tgz#eaf439fd4d4848ad74e5cc7dbef200672b9e345b"
@@ -1114,6 +1118,10 @@ pbkdf2@^3.0.3:
   resolved "https://registry.yarnpkg.com/pbkdf2/-/pbkdf2-3.0.9.tgz#f2c4b25a600058b3c3773c086c37dbbee1ffe693"
   dependencies:
     create-hmac "^1.1.2"
+
+polymer@Polymer/polymer#2.0-preview:
+  version "2.0.0-preview"
+  resolved "https://codeload.github.com/Polymer/polymer/tar.gz/21f637fb7ecc72ff9c26b8fe011b3ee3fac91fe4"
 
 private@^0.1.6, private@~0.1.5:
   version "0.1.6"
