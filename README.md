@@ -1,5 +1,5 @@
-This is an experiment to try applying a mixin to Polymer.Element under
-different conditions:
+This project defines a custom element by subclassing Polymer.Element and
+applying a mixin. This defines the same simple element in various conditions:
 
 * The `es5` folder contains ES6 code that gets transpiled to ES5.
 * The `es6` folder contains ES6 code that is bundled but otherwise not

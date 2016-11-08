@@ -1,8 +1,7 @@
 const Mixin = (base) => class Mixin extends base {
   constructor() {
-    const result = super();
+    super();
     console.log('mixin constructor');
-    return result;
   }
 };
 
