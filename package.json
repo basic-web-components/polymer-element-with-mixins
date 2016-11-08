@@ -1,0 +1,7 @@
+{
+  "name": "polymer-element-with-mixins",
+  "version": "0.0.1",
+  "dependencies": {
+    "basic-component-mixins": "basic-web-components/basic-component-mixins"
+  }
+}

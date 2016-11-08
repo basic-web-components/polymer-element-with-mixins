@@ -4,19 +4,37 @@
   <meta charset="utf-8">
   <title>Polymer element with mixins</title>
   <link rel="import" href="bower_components/polymer/polymer-element.html">
+  <!-- <script src="bower_components/custom-elements/custom-elements.min.js"></script> -->
+  <script src="bower_components/custom-elements/src/native-shim.js"></script>
+  <script src="bower_components/custom-elements/src/htmlelement-instanceof.js"></script>
+  <script src="node_modules/basic-component-mixins/dist/basic-component-mixins.js"></script>
 
   <dom-module id="test-element">
     <template>
-      Hello, <slot></slot>.
+      <slot></slot>
     </template>
   </dom-module>
 
   <script>
-  class TestElement extends Polymer.Element {
+  const Mixin = base => class Mixin extends base {
+    constructor() {
+      super();
+      console.log('mixin constructor');
+    }
+  }
+
+  // class TestElement extends Basic.SingleSelection(Polymer.Element) {
+  // class TestElement extends Basic.SingleSelection(HTMLElement) {
+  class TestElement extends Mixin(Polymer.Element) {
+  // class TestElement extends Polymer.Element {
 
     constructor() {
       super();
-      console.log('here');
+      console.log('component constructor');
+    }
+
+    get items() {
+      return [...this.children];
     }
 
     static get is() { return 'test-element'; }
@@ -29,7 +47,11 @@
 </head>
 
 <body>
-  <test-element>world</test-element>
+  <test-element>
+    <div>One</div>
+    <div>Two</div>
+    <div>Three</div>
+  </test-element>
 </body>
 
 </html>
