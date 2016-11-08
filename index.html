@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Polymer element with mixins</title>
+  <link rel="import" href="bower_components/polymer/polymer-element.html">
+
+  <dom-module id="test-element">
+    <template>
+      Hello, <slot></slot>.
+    </template>
+  </dom-module>
+
+  <script>
+  class TestElement extends Polymer.Element {
+
+    constructor() {
+      super();
+      console.log('here');
+    }
+
+    static get is() { return 'test-element'; }
+
+  }
+
+  customElements.define(TestElement.is, TestElement);
+  </script>
+
+</head>
+
+<body>
+  <test-element>world</test-element>
+</body>
+
+</html>

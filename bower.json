@@ -1,0 +1,7 @@
+{
+  "name": "polymer-element-with-mixins",
+  "version": "0.0.1",
+  "dependencies": {
+    "polymer": "Polymer/polymer#2.0-preview"
+  }
+}
