@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Polymer element with mixins</title>
+  <link rel="import" href="../node_modules/polymer/polymer-element.html">
+  <script src="dist/build.js"></script>
+
+  <dom-module id="list-box">
+    <template>
+      <slot></slot>
+    </template>
+  </dom-module>
+
+</head>
+
+<body>
+  <list-box>
+    <div>One</div>
+    <div>Two</div>
+    <div>Three</div>
+    <div>Four</div>
+    <div>Five</div>
+  </list-box>
+</body>
+
+</html>

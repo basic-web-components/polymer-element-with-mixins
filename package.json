@@ -11,6 +11,7 @@
   },
   "scripts": {
     "es5": "node node_modules/browserify/bin/cmd.js --debug --transform [babelify] es5/TestElement.js --outfile es5/dist/build.js",
-    "es6": "node node_modules/browserify/bin/cmd.js --debug --transform [babelify] es6/TestElement.js --outfile es6/dist/build.js"
+    "es6": "node node_modules/browserify/bin/cmd.js --debug --transform [babelify] es6/TestElement.js --outfile es6/dist/build.js",
+    "bwc": "node node_modules/browserify/bin/cmd.js --debug --transform [babelify] bwc/ListBox.js --outfile bwc/dist/build.js"
   }
 }
