@@ -1,37 +1,37 @@
-import DistributedChildren from 'basic-component-mixins/src/DistributedChildren';
-import DistributedChildrenAsContent from 'basic-component-mixins/src/DistributedChildrenAsContent';
-import ClickSelection from 'basic-component-mixins/src/ClickSelection';
-import ContentAsItems from 'basic-component-mixins/src/ContentAsItems';
-import DirectionSelection from 'basic-component-mixins/src/DirectionSelection';
-import Generic from 'basic-component-mixins/src/Generic';
-import Keyboard from 'basic-component-mixins/src/Keyboard';
-import KeyboardDirection from 'basic-component-mixins/src/KeyboardDirection';
-import KeyboardPagedSelection from 'basic-component-mixins/src/KeyboardPagedSelection';
-import KeyboardPrefixSelection from 'basic-component-mixins/src/KeyboardPrefixSelection';
-import SelectedItemTextAsValue from 'basic-component-mixins/src/SelectedItemTextAsValue';
-import SelectionAriaActive from 'basic-component-mixins/src/SelectionAriaActive';
-import SelectionHighlight from 'basic-component-mixins/src/SelectionHighlight';
-import SelectionInView from 'basic-component-mixins/src/SelectionInView';
-import SingleSelection from 'basic-component-mixins/src/SingleSelection';
+import DistributedChildrenMixin from 'basic-component-mixins/src/DistributedChildrenMixin';
+import DistributedChildrenContentMixin from 'basic-component-mixins/src/DistributedChildrenContentMixin';
+import ClickSelectionMixin from 'basic-component-mixins/src/ClickSelectionMixin';
+import ContentItemsMixin from 'basic-component-mixins/src/ContentItemsMixin';
+import DirectionSelectionMixin from 'basic-component-mixins/src/DirectionSelectionMixin';
+import GenericMixin from 'basic-component-mixins/src/GenericMixin';
+import KeyboardMixin from 'basic-component-mixins/src/KeyboardMixin';
+import KeyboardDirectionMixin from 'basic-component-mixins/src/KeyboardDirectionMixin';
+import KeyboardPagedSelectionMixin from 'basic-component-mixins/src/KeyboardPagedSelectionMixin';
+import KeyboardPrefixSelectionMixin from 'basic-component-mixins/src/KeyboardPrefixSelectionMixin';
+import SelectedItemTextValueMixin from 'basic-component-mixins/src/SelectedItemTextValueMixin';
+import SelectionAriaActiveMixin from 'basic-component-mixins/src/SelectionAriaActiveMixin';
+import SelectionHighlightMixin from 'basic-component-mixins/src/SelectionHighlightMixin';
+import SelectionInViewMixin from 'basic-component-mixins/src/SelectionInViewMixin';
+import SingleSelectionMixin from 'basic-component-mixins/src/SingleSelectionMixin';
 import symbols from 'basic-component-mixins/src/symbols';
 
 
 const mixins = [
-  ClickSelection,
-  ContentAsItems,
-  DirectionSelection,
-  DistributedChildren,
-  DistributedChildrenAsContent,
-  Generic,
-  Keyboard,
-  KeyboardDirection,
-  KeyboardPagedSelection,
-  KeyboardPrefixSelection,
-  SelectedItemTextAsValue,
-  SelectionAriaActive,
-  SelectionHighlight,
-  SelectionInView,
-  SingleSelection
+  ClickSelectionMixin,
+  ContentItemsMixin,
+  DirectionSelectionMixin,
+  DistributedChildrenMixin,
+  DistributedChildrenContentMixin,
+  GenericMixin,
+  KeyboardMixin,
+  KeyboardDirectionMixin,
+  KeyboardPagedSelectionMixin,
+  KeyboardPrefixSelectionMixin,
+  SelectedItemTextValueMixin,
+  SelectionAriaActiveMixin,
+  SelectionHighlightMixin,
+  SelectionInViewMixin,
+  SingleSelectionMixin
 ];
 const base = mixins.reduce((subclass, mixin) => mixin(subclass), window.Polymer.Element);
 
